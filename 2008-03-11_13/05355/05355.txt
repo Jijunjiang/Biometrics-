@@ -1,0 +1,10 @@
+0 05355d81 Right
+1 05355d82 Right
+2 05355d83 Right
+3 05355d84 Right
+4 05355d85 Right
+5 05355d86 Right
+6 05355d87 Left
+7 05355d88 Left
+8 05355d89 Left
+9 05355d90 Left

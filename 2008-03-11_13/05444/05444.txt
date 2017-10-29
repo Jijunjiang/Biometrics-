@@ -1,0 +1,12 @@
+0 05444d52 Right
+1 05444d53 Right
+2 05444d54 Right
+3 05444d55 Right
+4 05444d56 Right
+5 05444d57 Right
+6 05444d58 Left
+7 05444d59 Left
+8 05444d60 Left
+9 05444d61 Left
+10 05444d62 Right
+11 05444d63 Left

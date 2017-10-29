@@ -1,0 +1,11 @@
+0 05459d13 Right
+1 05459d14 Right
+2 05459d15 Right
+3 05459d16 Right
+4 05459d17 Right
+5 05459d18 Right
+6 05459d19 Left
+7 05459d20 Left
+8 05459d21 Left
+9 05459d22 Left
+10 05459d23 Left

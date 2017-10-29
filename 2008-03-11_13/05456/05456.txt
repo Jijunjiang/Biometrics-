@@ -1,0 +1,11 @@
+0 05456d48 Left
+1 05456d49 Left
+2 05456d50 Left
+3 05456d51 Left
+4 05456d52 Left
+5 05456d53 Left
+6 05456d54 Right
+7 05456d55 Right
+8 05456d56 Right
+9 05456d57 Right
+10 05456d58 Right
