@@ -43,7 +43,7 @@ function [ output_args ] = irisJijun( mainFolder, nameSafe )
             if strcmp(eye{i}, 'Right') && right > 0
                 disp([thisFolder, '/', id{i}, '.tiff']);
                 [template, errmask] = createiristemplate([thisFolder, '/', id{i}, '.tiff']);
-                if sum(~errmask(:)) > 300
+                if sum(~errmask(:)) > 100
                     Righttemp{end + 1} = template;
                     Rightmask{end + 1} = errmask;
                     right = right - 1;
@@ -52,7 +52,7 @@ function [ output_args ] = irisJijun( mainFolder, nameSafe )
             else if strcmp(eye{i}, 'Left') && left > 0
                 disp([thisFolder, '/', id{i}, '.tiff']);
                 [template, errmask] = createiristemplate([thisFolder, '/', id{i}, '.tiff']);
-                if sum(~errmask(:)) > 300
+                if sum(~errmask(:)) > 100
                     Lefttemp{end + 1} = template;
                     Leftmask{end + 1} = errmask;  
                     left = left - 1;

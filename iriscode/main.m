@@ -8,7 +8,7 @@
 %     df = df[(df['id'] == 'sequenceid') | (df['id'] == 'eye')]
 %     df.to_csv(path_or_buf = root + subdir + '/' + subdir + '.csv', sep = ',')
 
-mainFolder = '/Users/apple/Desktop/reading/bio/2008-03-11_13';
+mainFolder = '/Users/apple/Desktop/reading/bio/iris/2008-03-11_13/';
 allSubFolders = genpath(mainFolder);
 remain = allSubFolders;
 listOfFolderNames = strsplit(remain, ':');
@@ -37,13 +37,13 @@ for k = 2 : numberOfFolders
         if strcmp(eye{i}, 'Right')
             disp([thisFolder, '/', id{i}, '.tiff']);
             [template, errmask] = createiristemplate([thisFolder, '/', id{i}, '.tiff']);
-            if sum(~errmask(:)) > 200
+            if sum(~errmask(:)) > 100
                 Righttemp{end + 1} = template;
                 Rightmask{end + 1} = errmask;
             end
         else if strcmp(eye{i}, 'Left')
             [template, errmask] = createiristemplate([thisFolder, '/', id{i}, '.tiff']);
-            if sum(~errmask(:)) > 200
+            if sum(~errmask(:)) > 100
                 Lefttemp{end + 1} = template;
                 Leftmask{end + 1} = errmask;
             end
@@ -54,7 +54,7 @@ for k = 2 : numberOfFolders
     key{end + 1} = txtFile.name(1:length(txtFile.name) - 4);
 end
 data = {key, value};
-save('2008.mat','data');
+save('2008_100.mat','data');
 
 
 
